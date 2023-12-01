@@ -21,5 +21,19 @@ namespace Assessment.ReverseIntegers
 
            return Convert.ToInt32(concatenatedString);
         }
+        public int ReverseInteger(int val)
+        {
+            string convertNumber = val.ToString(); //convert to str
+            char[] convertedNumber = convertNumber.ToCharArray(); //convert to char array
+            Array.Reverse(convertedNumber);
+
+            string reversedArr = new string(convertedNumber);
+
+            int reversedVal;
+            int.TryParse(reversedArr, out reversedVal);
+
+            return reversedVal;
+        }
+
     }
 }

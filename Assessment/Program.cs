@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Assessment.MostAppearingCharacter;
+using Assessment.PromptUser;
 using Assessment.RemoveWhitespaces;
 using Assessment.ReverseIntegers;
 
@@ -14,3 +15,12 @@ RemoveWhitespaces rmw = new RemoveWhitespaces();
 
 ReverseOrdering ordering = new ReverseOrdering();
 Console.WriteLine(ordering.reverseInt(1234));
+Console.WriteLine(ordering.ReverseInteger(6784));
+
+PromptUser prompt = new PromptUser();
+prompt.promptUser("aeiou");
+
+Console.WriteLine("Enter a string ");
+string inputStr = Console.ReadLine();
+
+//int vCount = promptUser(inputStr);
