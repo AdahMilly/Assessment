@@ -3,6 +3,7 @@ using Assessment.MostAppearingCharacter;
 using Assessment.PromptUser;
 using Assessment.RemoveWhitespaces;
 using Assessment.ReverseIntegers;
+using Assessment.ReverseString;
 
 Console.WriteLine("Hello, World!");
 
@@ -24,3 +25,5 @@ Console.WriteLine("Enter a string ");
 string inputStr = Console.ReadLine();
 
 //int vCount = promptUser(inputStr);
+ReverseString reverseStrs = new ReverseString();
+Console.WriteLine(reverseStrs.reverseString("mildred")); 
